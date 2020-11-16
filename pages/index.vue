@@ -14,7 +14,7 @@ import axios from 'axios';
 export default {
   async asyncData({$config}) {
     const { data } = await axios.get(
-      'https://nuxt-sample.microcms.io/api/v1/news',
+      process.env.baseUrl + '/api/v1/news',
       {
         headers: { 
           'X-API-KEY': $config.apiKey

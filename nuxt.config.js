@@ -1,5 +1,5 @@
-require('dotenv').config();
-const { API_KEY } = process.env;
+require('dotenv').config()
+const { API_KEY } = process.env
 
 export default {
   privateRuntimeConfig: {
@@ -46,5 +46,9 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
+  },
+  
+  env: {
+    API_KEY
   }
 }

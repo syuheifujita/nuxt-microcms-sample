@@ -9,15 +9,17 @@
 </template>
 
 <script>
-import axios from 'axios'
+import axios from 'axios';
+
 export default {
   async asyncData({$config}) {
     const { data } = await axios.get(
-      // your-service-id部分は自分のサービスidに置き換えてください
       'https://nuxt-sample.microcms.io/api/v1/news',
       {
-        // your-api-key部分は自分のapi-keyに置き換えてください
-        headers: { 'X-API-KEY': $config.apiKey }
+        headers: { 
+          'X-API-KEY': $config.apiKey
+          // 'X-API-KEY': 'ef7399c4-fd48-46d2-92d9-634226fbd754'
+        }
       }
     )
     return data

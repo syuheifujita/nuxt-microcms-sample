@@ -1,11 +1,16 @@
 <template>
-  <ul>
-    <li v-for="content in contents" :key="content.id">
+  <div>
+    <div v-for="content in contents" :key="content.id">
       <nuxt-link :to="`/${content.id}`">
-        {{ content.title }}
+        <div>
+          <img :src="content.image.url" alt="">
+        </div>
+        <div>
+          {{ content.title }}          
+        </div>
       </nuxt-link>
-    </li>
-  </ul>
+    </div>
+  </div>
 </template>
 
 <script>

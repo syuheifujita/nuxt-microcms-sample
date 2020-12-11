@@ -69,7 +69,7 @@ typings/
 .nuxt
 
 # Nuxt generate
-dist
+*dist
 
 # vuepress build output
 .vuepress/dist
@@ -84,9 +84,11 @@ dist
 sw.*
 
 # macOS
-.DS_Store
+*.DS_Store
 
 # Vim swap files
 *.swp
 
 *.env
+
+

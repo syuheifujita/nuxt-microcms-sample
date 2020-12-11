@@ -1,6 +1,7 @@
 <template>
   <div>
     <h1>画像一覧</h1>
+    
     <div v-for="content in contents" :key="content.id">
       <nuxt-link :to="`/${content.id}`">
         <div>
